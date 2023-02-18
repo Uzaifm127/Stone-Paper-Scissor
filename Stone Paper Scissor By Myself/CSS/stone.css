@@ -1,0 +1,105 @@
+@import url("https://fonts.googleapis.com/css2?family=Quicksand&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Quicksand", sans-serif;
+}
+
+body {
+  background: #000;
+  color: #fff;
+}
+
+#navbar {
+  background: #ff0;
+  color: #000;
+  height: 10vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+/* % is the best unit for responsiveness of top left right bottom for position property in css */
+
+#date {
+  position: absolute;
+  right: 5%;
+  font-weight: 800;
+  font-size: 1.5vw;
+  letter-spacing: 0.2em;
+}
+
+main {
+  height: 90vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.input {
+  padding: 0.5em 1em;
+  text-align: center;
+  border-radius: 0.26em;
+  border: none;
+  font-size: 2vw;
+}
+
+.input:focus {
+  outline: none;
+}
+
+.gameInfo {
+  font-size: 1.9vw;
+  text-align: center;
+}
+
+/* flex direction column = align-item => x-axis
+                            justify-content => y-axis
+                            opposite with rows */
+
+.inputAndButton {
+  margin-bottom: 5em;
+}
+
+/* if hamne div(block) element ko width de di then uski block capacity margin poori karti hai to block element ko jabtak width nhi doge margin auto se element center nhi hoga*/
+
+#inputContainer {
+  width: 55vw;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+/* kisi bhi element ki display block margin dekar hoti hai width dekar nhi hoti hai */
+.submit {
+  transition: all 0.2s ease;
+  font-size: 1.5vw;
+  background: white;
+  padding: 0.2em 0.5em;
+  border: none;
+  cursor: pointer;
+  outline: none;
+  border-radius: 0.2em;
+  margin-top: 1em;
+}
+
+.submitClicked {
+  background: skyblue;
+}
+
+.btn {
+  width: 25vw;
+  text-align: center;
+}
+
+/* It is not possible to give the "margin: auto" property to an element in the y-axis without using display: flex or grid.  */
+
+/* #navbarHeading{
+  width: 100vw;
+  text-align: center;
+  height: 10vh;
+  margin: auto;
+} */

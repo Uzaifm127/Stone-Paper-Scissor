@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Stone Paper Scissor Page</title>
+    <link
+      rel="stylesheet"
+      href="/CSS/stone.css"
+    />
+  </head>
+  <body>
+    <header>
+      <nav id="navbar">
+        <h1 id="navbarHeading">Stone Paper Scissor Game Online Play</h1>
+        <div id="date"></div>
+      </nav>
+    </header>
+    <hr />
+    <main>
+      <div id="gameContainer">
+        <div class="inputAndButton">
+          <div id="inputContainer">
+            <input
+              type="text"
+              class="input"
+              id="userInput"
+              placeholder="Stone Paper Scissor"
+            />
+            <input
+              type="text"
+              class="input"
+              id="cpuInput"
+              placeholder="Stone Paper Scissor"
+            />
+          </div>
+          <div class="btn">
+            <button class="submit">Submit</button>
+          </div>
+        </div>
+        <div class="gameInfo">
+          <div class="Winner"><span></span></div>
+        </div>
+      </div>
+    </main>
+    <script src="/JS/stone.js"></script>
+  </body>
+</html>
